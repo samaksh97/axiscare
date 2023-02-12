@@ -1,3 +1,32 @@
+# AxisCare
+
+# Data
+[Google COVID-19 Open Data Repository](https://health.google.com/covid-19/open-data/)
+
+This data repository is one of the most comprehensive collections of up-to-date COVID-19-related information. Comprising of data from more than twenty thousand locations worldwide, it contains a rich variety of data types to help public health professionals, researchers and policymakers in understanding and managing the virus.
+
+__Size:__  The size of the aggregated dataset is ~22.52 GB, pre-processing.
+
+
+# Installation Instructions
+To install the application locally:
+
+- Clone the git repository `git clone https://github.com/shubhlohiya/axiscare.git`
+- Use Python version 3.7 or higher
+- Run `pip install -r requirements.txt` to install the required dependencies
+- Run the following command in the app's directory to run the webapp locally `python app.py`
+- Go to http://127.0.0.1:5000/ to view the application
+
+# Demo Video
+- [AxisCare Demo](www.youtube.com) can be viewed to grasp a brief understanding on how one may leverage this dashboard
+
+# AxisCare Dashboard
+## Mobility US Analysis
+![Mobility](./static/gifs/mobilitytb.gif)
+
+## Mobility Pie Chart Analysis (State Wise - US)
+![Mobility](./static/gifs/mobilitypie.gif)
+
 ## Inspiration
 _Access to timely health care is a fundamental human right._
 
@@ -30,6 +59,7 @@ We learned how to work with the datasets available in order to solve for a probl
 
 ## What's next for AxisCare
 We hope to continue using more recent data in order to strengthen the insights we gain from the data. We hope to address the gaps evident using the data to find areas in which states, governments, and policy makers need to divert their attention and focus to when it comes to the accessibility of healthcare.
+
 
 
 ## Build by: Saksham Arora, Samaksh Gulati, Schezeen Fazulbhoy and Shubham Lohiya (Go Jackets!!!)
