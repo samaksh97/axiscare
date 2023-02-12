@@ -27,6 +27,16 @@ To install the application locally:
 
 
 # AxisCare Dashboard
+
+## Vaccination Facility per 10k
+![Vaccination](./static/gifs/vacc1.gif)
+
+## Cases vs Death
+![Vaccination](./static/gifs/vacc2.gif)
+
+## Case Based Trends
+![Vaccination](./static/gifs/c1.gif)
+
 ## Mobility US Analysis
 ![Mobility](./static/gifs/mobilitytb.gif)
 
