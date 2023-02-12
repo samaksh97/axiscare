@@ -29,6 +29,10 @@ def trends():
 def mobility():
     return render_template("mobility.html")
 
+@app.route('/insights')
+def insights():
+    return render_template('insights.html')
+
 @app.context_processor
 def utility_processor():    
     def get_search_trends():
