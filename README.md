@@ -78,4 +78,4 @@ We hope to continue using more recent data in order to strengthen the insights w
 
 
 
-# Build by: Saksham Arora, Samaksh Gulati, Schezeen Fazulbhoy and Shubham Lohiya _(Go Jackets!!!)_
+## Build by: [Saksham Arora](https://www.linkedin.com/in/sakshamarora97/), [Samaksh Gulati](https://www.linkedin.com/in/samaksh-gulati-38b842119/), [Schezeen Fazulbhoy](https://www.linkedin.com/in/schezeenfazulbhoy/) and [Shubham Lohiya](https://www.linkedin.com/in/lohiya-shubham/) _(Go Jackets!!!)_
