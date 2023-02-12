@@ -5,6 +5,11 @@
 
 This data repository is one of the most comprehensive collections of up-to-date COVID-19-related information. Comprising of data from more than twenty thousand locations worldwide, it contains a rich variety of data types to help public health professionals, researchers and policymakers in understanding and managing the virus.
 
+The data is hosted on MongoDB. 
+
+
+![MongoDB](./static/images/mongodb.png)
+
 __Size:__  The size of the aggregated dataset is ~22.52 GB, pre-processing.
 
 
@@ -19,6 +24,7 @@ To install the application locally:
 
 # Demo Video
 - [AxisCare Demo](www.youtube.com) can be viewed to grasp a brief understanding on how one may leverage this dashboard
+
 
 # AxisCare Dashboard
 ## Mobility US Analysis
