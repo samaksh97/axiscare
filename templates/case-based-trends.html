@@ -35,7 +35,7 @@
   <header>
     <div class="p-2 text-center bg-dark">
       <h1 class="mb-3" style="color: whitesmoke">AxisCare</h1>
-      <!-- <h4 class="mb-3" style="color: lightgrey"><i>Access to Care Across All Axii</i></h4> -->
+      <h4 class="mb-3" style="color: lightgrey"><i>Access to Care</i></h4>
       <!-- <a class="btn btn-primary" href="" role="button">Call to action</a> -->
     </div>
   </header>
@@ -55,7 +55,9 @@
 </body>
 
 <script>
-  $(function(){
+  $(window).on('load', function() {
+    // your code here
+    $(function(){
       $("#acbs").load("./../static/html_plots/average_cases_by_state.html"); 
       $("#acsbs").load("./../static/html_plots/average_critical_shortage_by_state.html"); 
       $("#cwdc").load("./../static/html_plots/covid_19_weekly_deaths_california.html"); 
@@ -63,16 +65,66 @@
       $("#csvibu").load("./../static/html_plots/critical_shortage_vs_inpatient_bed_utilization_KS_NC.html"); 
       $("#csvibu2").load("./../static/html_plots/critical_shortage_vs_inpatient_bed_utilization_PA_WY.html"); 
     });
+  });
+  
 </script>
 <div class="container text-center">
-  <h1 class="text-center">Something Something</h1>
-  <p class="lead">
-
+  <h1 class="text-center"><u>The State of The States</u></h1>
+</div>
 <div class="container text-center" id="acsbs"></div>
-<div class="container text-center" id="acbs"></div>
-<div class="container text-center" id="cwdc"></div>
-<div class="container text-center" id="cspwc"></div>
+<p style="size: 20px" class="text-center">Around 9 States in the US have hospitals that faced >20% critical shortage of
+  staffing daily on average for the last 2 years consistently</p>
+  <div class="container text-center" id="cwdc"></div>    
+  <div class="container text-center" id="cspwc"></div>
+  <p style="size: 20px" class="text-center">
+    We can clearly see how gaps in the system are revealed when COVID cases and
+    deaths start to rise, hospitals scramble for staff.</p>
+
+
+<div class="container text-center">
+  <h1 class="text-center"><u>All States Are Not Equal</u></h1>
+</div>
+
 <div class="container text-center" id="csvibu"></div>
 <div class="container text-center" id="csvibu2"></div>
+<div class="container text-center">
+  <p style="size: 20px; width: 300px;" class="text-center">
+    <ul class="text-left">
+      <li>All states are not equipped in the same way to manage staffing e.g. Hospitals in
+        Pennsylvania average about 70-80% utilization and face much lower staff
+        shortages as compared to Wyoming which face higher shortages even with just
+        45% inpatient bed utilization.</li>
+      <li>
+        We can see a similar pattern in Kansas vs North Carolina</li>
+    </ul>
+  </p>
+</div>
+
+<div class="container text-center">
+  <h1 class="text-center"> <u>The Good, the Bad and the Ugly</u></h1>
+</div>
+
+<div class="container text-center" id="acbs"></div>
+
+<div class="container text-center">
+  <p style="size: 20px; width: 300px;" class="text-center">
+    <ul class="text-left">
+      <li>Smaller and remote states such as Virgin Islands, Rhode islands and New Mexico
+        top the charts for facing critical staff shortages.</li>
+      <li>Florida, New York and Illinois outperform other states in finding staff even in the
+        face of high COVID-19 caseload, there is a need to explore how they are keeping
+        up their infrastructure in place</li>
+      <li>
+        Georgia, Arizona and Virgina are states that need the government attention and
+        help to allocate the staff needed to manage patients.</li>
+    </ul>
+  </p>
+</div>
+
+
+
+
+
+
 
 </html>
