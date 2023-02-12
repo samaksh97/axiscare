@@ -23,7 +23,7 @@ To install the application locally:
 - Go to http://127.0.0.1:5000/ to view the application
 
 # Demo Video
-- [AxisCare Demo](www.youtube.com) can be viewed to grasp a brief understanding on how one may leverage this dashboard
+- [AxisCare Demo](https://youtu.be/Sui4tySv5nc) can be viewed to grasp a brief understanding on how one may leverage this dashboard
 
 
 # AxisCare Dashboard
