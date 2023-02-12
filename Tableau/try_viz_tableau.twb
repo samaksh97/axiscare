@@ -1,0 +1,708 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.22.1117.1841                               -->
+<workbook original-version='18.1' source-build='2022.4.0 (20224.22.1117.1841)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='us_state_vaccinations' inline='true' name='federated.0wviec31h3pvib1cn5sec1t24q66' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='us_state_vaccinations' name='textscan.1d55ns11pmbr0c1gnd1cn07esokr'>
+            <connection class='textscan' directory='/Users/samaksh/Documents/Spring 23/Hackalytics' filename='us_state_vaccinations.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1d55ns11pmbr0c1gnd1cn07esokr' name='us_state_vaccinations.csv' table='[us_state_vaccinations#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='string' name='location' ordinal='1' />
+            <column datatype='real' name='total_vaccinations' ordinal='2' />
+            <column datatype='real' name='total_distributed' ordinal='3' />
+            <column datatype='real' name='people_vaccinated' ordinal='4' />
+            <column datatype='real' name='people_fully_vaccinated_per_hundred' ordinal='5' />
+            <column datatype='real' name='total_vaccinations_per_hundred' ordinal='6' />
+            <column datatype='real' name='people_fully_vaccinated' ordinal='7' />
+            <column datatype='real' name='people_vaccinated_per_hundred' ordinal='8' />
+            <column datatype='real' name='distributed_per_hundred' ordinal='9' />
+            <column datatype='real' name='daily_vaccinations_raw' ordinal='10' />
+            <column datatype='real' name='daily_vaccinations' ordinal='11' />
+            <column datatype='real' name='daily_vaccinations_per_million' ordinal='12' />
+            <column datatype='real' name='share_doses_used' ordinal='13' />
+            <column datatype='integer' name='total_boosters' ordinal='14' />
+            <column datatype='real' name='total_boosters_per_hundred' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1d55ns11pmbr0c1gnd1cn07esokr' name='us_state_vaccinations.csv' table='[us_state_vaccinations#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='string' name='location' ordinal='1' />
+            <column datatype='real' name='total_vaccinations' ordinal='2' />
+            <column datatype='real' name='total_distributed' ordinal='3' />
+            <column datatype='real' name='people_vaccinated' ordinal='4' />
+            <column datatype='real' name='people_fully_vaccinated_per_hundred' ordinal='5' />
+            <column datatype='real' name='total_vaccinations_per_hundred' ordinal='6' />
+            <column datatype='real' name='people_fully_vaccinated' ordinal='7' />
+            <column datatype='real' name='people_vaccinated_per_hundred' ordinal='8' />
+            <column datatype='real' name='distributed_per_hundred' ordinal='9' />
+            <column datatype='real' name='daily_vaccinations_raw' ordinal='10' />
+            <column datatype='real' name='daily_vaccinations' ordinal='11' />
+            <column datatype='real' name='daily_vaccinations_per_million' ordinal='12' />
+            <column datatype='real' name='share_doses_used' ordinal='13' />
+            <column datatype='integer' name='total_boosters' ordinal='14' />
+            <column datatype='real' name='total_boosters_per_hundred' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[us_state_vaccinations.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[us_state_vaccinations.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us_state_vaccinations.csv_D98E5AC7D80F45588A9065197B094786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[location]</local-name>
+            <parent-name>[us_state_vaccinations.csv]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us_state_vaccinations.csv_D98E5AC7D80F45588A9065197B094786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_vaccinations</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_vaccinations]</local-name>
+            <parent-name>[us_state_vaccinations.csv]</parent-name>
+            <remote-alias>total_vaccinations</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us_state_vaccinations.csv_D98E5AC7D80F45588A9065197B094786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_distributed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_distributed]</local-name>
+            <parent-name>[us_state_vaccinations.csv]</parent-name>
+            <remote-alias>total_distributed</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us_state_vaccinations.csv_D98E5AC7D80F45588A9065197B094786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>people_vaccinated</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[people_vaccinated]</local-name>
+            <parent-name>[us_state_vaccinations.csv]</parent-name>
+            <remote-alias>people_vaccinated</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us_state_vaccinations.csv_D98E5AC7D80F45588A9065197B094786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>people_fully_vaccinated_per_hundred</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[people_fully_vaccinated_per_hundred]</local-name>
+            <parent-name>[us_state_vaccinations.csv]</parent-name>
+            <remote-alias>people_fully_vaccinated_per_hundred</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us_state_vaccinations.csv_D98E5AC7D80F45588A9065197B094786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_vaccinations_per_hundred</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_vaccinations_per_hundred]</local-name>
+            <parent-name>[us_state_vaccinations.csv]</parent-name>
+            <remote-alias>total_vaccinations_per_hundred</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us_state_vaccinations.csv_D98E5AC7D80F45588A9065197B094786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>people_fully_vaccinated</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[people_fully_vaccinated]</local-name>
+            <parent-name>[us_state_vaccinations.csv]</parent-name>
+            <remote-alias>people_fully_vaccinated</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us_state_vaccinations.csv_D98E5AC7D80F45588A9065197B094786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>people_vaccinated_per_hundred</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[people_vaccinated_per_hundred]</local-name>
+            <parent-name>[us_state_vaccinations.csv]</parent-name>
+            <remote-alias>people_vaccinated_per_hundred</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us_state_vaccinations.csv_D98E5AC7D80F45588A9065197B094786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distributed_per_hundred</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[distributed_per_hundred]</local-name>
+            <parent-name>[us_state_vaccinations.csv]</parent-name>
+            <remote-alias>distributed_per_hundred</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us_state_vaccinations.csv_D98E5AC7D80F45588A9065197B094786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>daily_vaccinations_raw</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[daily_vaccinations_raw]</local-name>
+            <parent-name>[us_state_vaccinations.csv]</parent-name>
+            <remote-alias>daily_vaccinations_raw</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us_state_vaccinations.csv_D98E5AC7D80F45588A9065197B094786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>daily_vaccinations</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[daily_vaccinations]</local-name>
+            <parent-name>[us_state_vaccinations.csv]</parent-name>
+            <remote-alias>daily_vaccinations</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us_state_vaccinations.csv_D98E5AC7D80F45588A9065197B094786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>daily_vaccinations_per_million</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[daily_vaccinations_per_million]</local-name>
+            <parent-name>[us_state_vaccinations.csv]</parent-name>
+            <remote-alias>daily_vaccinations_per_million</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us_state_vaccinations.csv_D98E5AC7D80F45588A9065197B094786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>share_doses_used</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[share_doses_used]</local-name>
+            <parent-name>[us_state_vaccinations.csv]</parent-name>
+            <remote-alias>share_doses_used</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us_state_vaccinations.csv_D98E5AC7D80F45588A9065197B094786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_boosters</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_boosters]</local-name>
+            <parent-name>[us_state_vaccinations.csv]</parent-name>
+            <remote-alias>total_boosters</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us_state_vaccinations.csv_D98E5AC7D80F45588A9065197B094786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_boosters_per_hundred</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_boosters_per_hundred]</local-name>
+            <parent-name>[us_state_vaccinations.csv]</parent-name>
+            <remote-alias>total_boosters_per_hundred</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us_state_vaccinations.csv_D98E5AC7D80F45588A9065197B094786]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='us_state_vaccinations.csv' datatype='table' name='[__tableau_internal_object_id__].[us_state_vaccinations.csv_D98E5AC7D80F45588A9065197B094786]' role='measure' type='quantitative' />
+      <column caption='Daily Vaccinations' datatype='real' name='[daily_vaccinations]' role='measure' type='quantitative' />
+      <column caption='Daily Vaccinations Per Million' datatype='real' name='[daily_vaccinations_per_million]' role='measure' type='quantitative' />
+      <column caption='Daily Vaccinations Raw' datatype='real' name='[daily_vaccinations_raw]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Distributed Per Hundred' datatype='real' name='[distributed_per_hundred]' role='measure' type='quantitative' />
+      <column caption='Location' datatype='string' name='[location]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='People Fully Vaccinated' datatype='real' name='[people_fully_vaccinated]' role='measure' type='quantitative' />
+      <column caption='People Fully Vaccinated Per Hundred' datatype='real' name='[people_fully_vaccinated_per_hundred]' role='measure' type='quantitative' />
+      <column caption='People Vaccinated' datatype='real' name='[people_vaccinated]' role='measure' type='quantitative' />
+      <column caption='People Vaccinated Per Hundred' datatype='real' name='[people_vaccinated_per_hundred]' role='measure' type='quantitative' />
+      <column caption='Share Doses Used' datatype='real' name='[share_doses_used]' role='measure' type='quantitative' />
+      <column caption='Total Boosters' datatype='integer' name='[total_boosters]' role='measure' type='quantitative' />
+      <column caption='Total Boosters Per Hundred' datatype='real' name='[total_boosters_per_hundred]' role='measure' type='quantitative' />
+      <column caption='Total Distributed' datatype='real' name='[total_distributed]' role='measure' type='quantitative' />
+      <column caption='Total Vaccinations' datatype='real' name='[total_vaccinations]' role='measure' type='quantitative' />
+      <column caption='Total Vaccinations Per Hundred' datatype='real' name='[total_vaccinations_per_hundred]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='us_state_vaccinations.csv' id='us_state_vaccinations.csv_D98E5AC7D80F45588A9065197B094786'>
+            <properties context=''>
+              <relation connection='textscan.1d55ns11pmbr0c1gnd1cn07esokr' name='us_state_vaccinations.csv' table='[us_state_vaccinations#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='date' ordinal='0' />
+                  <column datatype='string' name='location' ordinal='1' />
+                  <column datatype='real' name='total_vaccinations' ordinal='2' />
+                  <column datatype='real' name='total_distributed' ordinal='3' />
+                  <column datatype='real' name='people_vaccinated' ordinal='4' />
+                  <column datatype='real' name='people_fully_vaccinated_per_hundred' ordinal='5' />
+                  <column datatype='real' name='total_vaccinations_per_hundred' ordinal='6' />
+                  <column datatype='real' name='people_fully_vaccinated' ordinal='7' />
+                  <column datatype='real' name='people_vaccinated_per_hundred' ordinal='8' />
+                  <column datatype='real' name='distributed_per_hundred' ordinal='9' />
+                  <column datatype='real' name='daily_vaccinations_raw' ordinal='10' />
+                  <column datatype='real' name='daily_vaccinations' ordinal='11' />
+                  <column datatype='real' name='daily_vaccinations_per_million' ordinal='12' />
+                  <column datatype='real' name='share_doses_used' ordinal='13' />
+                  <column datatype='integer' name='total_boosters' ordinal='14' />
+                  <column datatype='real' name='total_boosters_per_hundred' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='us_state_vaccinations' name='federated.0wviec31h3pvib1cn5sec1t24q66' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0wviec31h3pvib1cn5sec1t24q66'>
+            <column caption='Daily Vaccinations' datatype='real' name='[daily_vaccinations]' role='measure' type='quantitative' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[location]' derivation='None' name='[none:location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[daily_vaccinations]' derivation='Sum' name='[sum:daily_vaccinations:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0wviec31h3pvib1cn5sec1t24q66].[Longitude (generated)]' field-type='quantitative' max='32654646.775702775' min='20281283.903781176' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0wviec31h3pvib1cn5sec1t24q66].[Latitude (generated)]' field-type='quantitative' max='7378213.8165363111' min='-660976.69579901919' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.0wviec31h3pvib1cn5sec1t24q66].[sum:daily_vaccinations:qk]' />
+              <lod column='[federated.0wviec31h3pvib1cn5sec1t24q66].[none:location:nk]' />
+              <geometry column='[federated.0wviec31h3pvib1cn5sec1t24q66].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='574' />
+                <format attr='maxheight' value='574' />
+                <format attr='minwidth' value='885' />
+                <format attr='maxwidth' value='885' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0wviec31h3pvib1cn5sec1t24q66].[Latitude (generated)]</rows>
+        <cols>[federated.0wviec31h3pvib1cn5sec1t24q66].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{68E189C9-0577-4030-A461-F790CE373975}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0wviec31h3pvib1cn5sec1t24q66].[sum:daily_vaccinations:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0wviec31h3pvib1cn5sec1t24q66].[none:location:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='16' />
+      </viewpoint>
+      <simple-id uuid='{64F73677-3814-41CF-AD58-4DDF1AF5B1F4}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 1' width='384'>
+      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
+      oohiABARRRQDgIgoohgAREQRxQAgIoooBgARUUQxAIiIIooBQEQUUQwAIqKIYgAQEUUUA4CI
+      KKIYAEREEcUAICKKKAYAEVFEMQCIiCKKAUBEFFEMACKiiGIAEBFFFAOAiCiiGABERBHFACAi
+      iigGABFRRDEAiIgiigFARBRRDAAioohiABARRRQDgIgoohgAREQRxQAgIoooBgARUUQxAM4Y
+      KSUcxxl1MYjoHGAAnFFSylEXgYjOOG3UBaDuCCGgquqoi0FE5wBbAEREEcUAICKKKAYAEVFE
+      MQCIiCKKAUBEFFEMACKiiGIAEBFFFAOAiCiiGABERBHFACAiiigGABFRRDEAiIgiigFARBRR
+      DAAioohiABARRRQDgIgoohgAREQRxQAgIoooBgARUUQxAIiIIooBQEQUUQwAIqKIYgAQEUUU
+      A4CIKKIYAEREEcUAICKKKAYAEVFEMQCIiCKKAUBEFFEMACKiiGIAEBFFFAOAiCiiGABERBHF
+      ACAiiigGABFRRDEAiIgiigFARBRRDAAioojSAEBKOepyEBHRkGnVahXVanXU5SAioiH7/9gu
+      JAzYq8z0AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
