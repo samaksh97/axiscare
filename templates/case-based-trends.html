@@ -26,7 +26,6 @@
    <script src="https://cdn.plot.ly/plotly-2.18.0.min.js"></script>
 
    <script type='module' src='https://10az.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
-   <script type='module' src='https://10az.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
 
 
 
@@ -44,8 +43,8 @@
   <div id="tester" style="width:600px;height:250px;"></div> -->
   <nav class="site-header sticky-top py-1">
     <div class="container d-flex flex-column flex-md-row justify-content-between">
-      <a class="py-2 d-none d-md-inline-block" style="color:#BF3943;" href="/">Home</a>
-      <a class="py-2 d-none d-md-inline-block" style="color: white;" href="/trends">Case Based Trends</a>
+      <a class="py-2 d-none d-md-inline-block" style="color:white;" href="/">Home</a>
+      <a class="py-2 d-none d-md-inline-block" style="color: #BF3943;" href="/trends">Case Based Trends</a>
       <a class="py-2 d-none d-md-inline-block" style="color: white;" href="/mobility">Mobility</a>
       <a class="py-2 d-none d-md-inline-block" style="color: white;" href="/search-trends">Search Trends</a>
     </div>
@@ -55,14 +54,25 @@
   
 </body>
 
+<script>
+  $(function(){
+      $("#acbs").load("./../static/html_plots/average_cases_by_state.html"); 
+      $("#acsbs").load("./../static/html_plots/average_critical_shortage_by_state.html"); 
+      $("#cwdc").load("./../static/html_plots/covid_19_weekly_deaths_california.html"); 
+      $("#cspwc").load("./../static/html_plots/critical_shortage_percentage_weekly_california.html");
+      $("#csvibu").load("./../static/html_plots/critical_shortage_vs_inpatient_bed_utilization_KS_NC.html"); 
+      $("#csvibu2").load("./../static/html_plots/critical_shortage_vs_inpatient_bed_utilization_PA_WY.html"); 
+    });
+</script>
 <div class="container text-center">
-  <h1 class="text-center">Vaccination Facilities Per 10k People</h1>
+  <h1 class="text-center">Something Something</h1>
   <p class="lead">
 
-  </p>
-  <tableau-viz id='tableau-viz' src='https://10az.online.tableau.com/t/samakshgualti/views/try_viz_tableau_1/Sheet7' width='1440' height='692' hide-tabs toolbar='bottom' ></tableau-viz>
-  <tableau-viz id='tableau-viz' src='https://10az.online.tableau.com/t/samakshgualti/views/try_viz_tableau_2/CasesDeaths' width='1440' height='692' hide-tabs toolbar='bottom' ></tableau-viz>
-</div>
-
+<div class="container text-center" id="acsbs"></div>
+<div class="container text-center" id="acbs"></div>
+<div class="container text-center" id="cwdc"></div>
+<div class="container text-center" id="cspwc"></div>
+<div class="container text-center" id="csvibu"></div>
+<div class="container text-center" id="csvibu2"></div>
 
 </html>

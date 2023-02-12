@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>AxisCare</title>
+   <!-- Bootstrap core CSS -->
+   <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- Custom styles for this template -->
+   <link href="static/css/product.css" rel="stylesheet">
+
+   <!-- Bootstraps Java Scipts Links -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+   <!-- JQuery links  -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+   <!--Plotly CDN-->
+   <script src="https://cdn.plot.ly/plotly-2.18.0.min.js"></script>
+
+   <script type='module' src='https://10az.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+   <script type='module' src='https://10az.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+
+
+
+</head>
+
+<body>
+  <header>
+    <div class="p-2 text-center bg-dark">
+      <h1 class="mb-3" style="color: whitesmoke">AxisCare</h1>
+      <!-- <h4 class="mb-3" style="color: lightgrey"><i>Access to Care Across All Axii</i></h4> -->
+      <!-- <a class="btn btn-primary" href="" role="button">Call to action</a> -->
+    </div>
+  </header>
+  <!-- <div>Hello World</div>
+  <div id="tester" style="width:600px;height:250px;"></div> -->
+  <nav class="site-header sticky-top py-1">
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+      <a class="py-2 d-none d-md-inline-block" style="color:white;" href="/">Home</a>
+      <a class="py-2 d-none d-md-inline-block" style="color: white;" href="/trends">Case Based Trends</a>
+      <a class="py-2 d-none d-md-inline-block" style="color: #BF3943;" href="/mobility">Mobility</a>
+      <a class="py-2 d-none d-md-inline-block" style="color: white;" href="/search-trends">Search Trends</a>
+    </div>
+  </nav>
+  <!-- <div id="myDiv"></div> -->
+  <!-- <div id="includedContent" style="width: 800px; height: 800px;"></div> -->
+  <script type="text/javascript" src="static/js/d3.v5.min.js"></script>
+    <script type="text/javascript" src="static/js/d3-dsv.min.js"></script>
+    <script type="text/javascript" src="static/js/d3-legend.min.js"></script>
+    <!-- <script type="text/javascript" src="static/js/d3-tip.min.js"></script> -->
+    <script type="text/javascript" src="static/js/d3-tip.min.js"></script>
+    <script src="http://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://unpkg.com/d3-simple-slider"></script>
+    <script type='module' src='https://10az.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+    
+    <div class="container text-center">
+        <h1 class="text-center">Mobility Trends</h1>
+        <p class="lead text-center">
+            Mobility trends in movement of the people in various states across the following 6 domains, <i>Retail & Recreation Areas,
+            Grocery and Pharmacy Stores,  Parks, Transit Stations, Workplaces, Residential Areas</i>. 
+        </p>
+        <tableau-viz id='tableau-viz' src='https://10az.online.tableau.com/t/samakshgualti/views/try_viz_tableau_4/Transit-Stations' width='1440' height='692' hide-tabs toolbar='bottom' ></tableau-viz>
+    </div>
+<div class="d-flex flex-column">
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+      <div class="mr-md-1 pt-1 px-1 pt-md-1 px-md-1 overflow-hidden" style="background-color: white;">
+        
+          <div style="color:black; font-size: 22px; margin: 100px 60px;">
+            Here we can visualise the <b>movement of people concerning 6 specific catergories across the various states of the United States</b>. 
+            
+            <br/>
+            <br/>
+
+            The data shows how visits to public spaces are changing in each geographic region.
+
+            <br/>
+            <br/>
+
+            The data displayed is a mean of the data collected for each country between <b>February 2020 and September 2022</b> across the following public spaces:
+            <br/>
+            <br/>
+            <ul style="margin-left: 20px; color: black;">
+              <li>Retail & Recreation Areas</li>
+              <li>Grocery and Pharmacy Stores</li>
+              <li>Parks</li>
+              <li>Transit Stations</li>
+              <li>Workplaces</li>
+              <li>Residential Areas</li>
+            </ul>
+        
+          
+          </div>        
+        </div>
+
+        <div class="mr-md-1 pt-1 px-1 pt-md-1 px-md-1 text-center text-white overflow-hidden" style="background-color:white;">
+          <div class="my-1 p-1">
+              <h1 class="display-5" style="color:black;">Country Wise Mobility Analysis</h1>
+              <div style="font-size: 16px; color: white; font-weight: 600;">Visualise the <i>community mobility</i> patterns of various countries</i> </div>
+            <br/>
+            <div> 
+              <p  style="font-size: 16px; color: white;">Select Country: <select id="countryDropDown"></select> </p>
+            </div>
+          </div>
+
+          <div id='pie-chart-mobility' class="box-shadow" style="background-color: white; width: 70%;  height: 650px; border-radius: 21px 21px 0 0;"></div>
+        </div>
+    </div>
+    </div>
+  
+</body>
+
+<script>pie_data = {{ get_mobility_pie_data() | safe }} 
+    // console.log("acutal: ", pie_data)
+
+    all_countries = []
+    for(i in pie_data){
+      if(pie_data[i][0]!=''){
+        all_countries.push(pie_data[i][0])
+      }
+    }
+
+    var unique_countries = [...new Set(all_countries.sort())];
+
+    d3.select("#countryDropDown").selectAll("options").data(unique_countries).enter().append("option").attr("value", data=>data).text(data=>data);
+
+    d3.select("#countryDropDown").on("change",function(){
+        var select = document.getElementById('countryDropDown');
+        var dropdown_value = select.options[select.selectedIndex].value;
+        var svg = d3.select("#pie-chart-mobility");
+        svg.selectAll("*").remove();
+        generating_data = []
+        for(i in pie_data){
+          if(pie_data[i][0] == dropdown_value){
+            generating_data.push(pie_data[i])
+          }
+        }
+        var element =  document.getElementById('pie_tooltip');
+        if (typeof(element) != 'undefined' && element != null)
+        {
+          element.remove();
+        }
+        create_pie_chart(generating_data[0], dropdown_value);
+    });
+
+    create_pie_chart(pie_data[2], unique_countries[0]);
+
+    function create_pie_chart(pie_data, country){
+      var mobility_all = pie_data[1]
+      var mobility_grocery_and_pharmacy = pie_data[2]
+      var mobility_parks = pie_data[3]
+      var mobility_residential = pie_data[4]
+      var mobility_retail_and_recreation = pie_data[5]
+      var mobility_transit_stations = pie_data[6]
+      var mobility_workplaces = pie_data[7]
+
+      var data = {'Retail & Recreation': +mobility_retail_and_recreation/+mobility_all, 
+                  'Grocery & Pharmacy': +mobility_grocery_and_pharmacy/+mobility_all, 
+                  'Parks' : +mobility_parks/+mobility_all, 
+                  'Transit Stations' : +mobility_transit_stations/+mobility_all, 
+                  'Workplaces': +mobility_workplaces/+mobility_all,
+                  'Residential': +mobility_residential/+mobility_all
+                }
+      
+
+      //console.log('data: ', data)
+
+      var pie_width = 790;
+      var pie_height = 650;
+      var pie_margin = 40;
+
+      var radius = Math.min(pie_width, pie_height) / 2 - pie_margin;
+      
+      var svg = d3.select("#pie-chart-mobility")
+      .append("svg")
+        .attr("width", pie_width)
+        .attr("height", pie_height)
+      .append("g")
+        .attr("transform", "translate(" + ((pie_width /2.1) + 30)+ "," + pie_height / 2 + ")");
+
+      var color = d3.scaleOrdinal().domain(data).range(["#FBEDC0", "#F8E197", "#F3CF58", "#F8F2B3","#D4C41B", "#C09C25"]);
+      var pie = d3.pie().value(function(d) {return d.value; });
+      var data_ready = pie(d3.entries(data));
+
+      // console.log("value: " , function(data_ready{(d.data.value*100).toFixed(2) ,"%"});
+      
+      div_tip = d3.select("body").append("div").attr("class", "tooltip").attr("id","pie_tooltip");
+      svg.selectAll('slices').data(data_ready).enter().append('path').attr('d', d3.arc().innerRadius(0).outerRadius(radius))
+        .attr('fill', function(d){ return(color(d.data.key)) }).attr("stroke", "#282c34").on("mousemove",function(d){
+        var mouseVal = d3.mouse(this);
+        var text = (d.data.value*100).toFixed(2) +"%" + "</br>" + "Mobility Coefficient: " + ((d.data.value)*(+mobility_all)*100).toFixed(2) + "<br/>"+ "Total Mobility for " + country + ": " +  (+mobility_all*100).toFixed(2) 
+        div_tip.html(d.data.key + " Mobility Index: "+ text)
+          .style("left", (d3.event.pageX+15) + "px")
+          .style("top", (d3.event.pageY-15) + "px")
+          .style("opacity", 1)
+          .style("background", "darkgrey")
+          .style("border", "1px solid black")
+          .style("color","black")
+          .style("font-weight","bold")
+          .style("padding", "5px")
+          .style("display","block");
+})
+        .style("stroke-width", "2px").style("opacity", 0.7);
+      
+      var arcGenerator = d3.arc().innerRadius(100).outerRadius(radius)
+     
+
+        svg.selectAll('slices').data(data_ready).enter().append('text').text(function(d){ return d.data.key })
+        .attr("transform", function(d) { return "translate(" + arcGenerator.centroid(d) + ")";  })
+        .style("text-anchor", "middle")
+        .style("font-size", 15)
+
+    }
+
+
+
+   </script>
+
+
+</html>
