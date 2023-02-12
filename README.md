@@ -44,7 +44,7 @@ We also secured a domain: careaxis.tech through domain.com for AxisCare.
 
 Being a team of 4, we worked on defining the problem statement based on the Elevance Challenge - "Access to Care." We collated datasets that contained data specific to facilities, mobility, vaccination rates and Google Search trends. We conducted our analysis on Access to Care with the accessibility to resources during the pandemic.
 
-Samaksh worked on cleaning, analyzing, pipelining, and visualizing the vaccination and mobility data on Tableau. Shubham and Saksham worked on the data analysis and visualization for vaccination and case-based covid data using Python (Numpy, Pandas and Plotly). Schezeen worked on the end-to-end webapp built using a HTML, CSS and JS frontend and served using a Python (Flask) backend. The data was retrieved from a cluster hosted on MongoDB Atlas.
+__Samaksh__ worked on cleaning, analyzing, pipelining, and visualizing the vaccination and mobility data on Tableau. __Shubham__ and __Saksham__ worked on the data analysis and visualization for vaccination and case-based covid data using Python (Numpy, Pandas and Plotly). __Schezeen__ worked on the end-to-end webapp built using a HTML, CSS and JS frontend and served using a Python (Flask) backend. The data was retrieved from a cluster hosted on MongoDB Atlas.
 
 We worked as a team, each motivating the other to pull through and focus on the bigger picture. We had a lot of fun working together and have learned a lot through the process, the insights we got through the data, and delivering the project!
 
@@ -62,4 +62,4 @@ We hope to continue using more recent data in order to strengthen the insights w
 
 
 
-## Build by: Saksham Arora, Samaksh Gulati, Schezeen Fazulbhoy and Shubham Lohiya (Go Jackets!!!)
+# Build by: Saksham Arora, Samaksh Gulati, Schezeen Fazulbhoy and Shubham Lohiya _(Go Jackets!!!)_
